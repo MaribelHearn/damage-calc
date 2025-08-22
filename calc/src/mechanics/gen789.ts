@@ -1487,9 +1487,13 @@ export function calculateAtModsSMSSSV(
     atMods.push(8192);
     desc.attackerItem = attacker.item;
     // Choice Band/Scarf/Specs move lock and stat boosts are ignored during Dynamax (Anubis)
+    // Fundex: also ignore Magma Engine / Nature Engine?
   } else if (!move.isZ && !move.isMax &&
-    ((attacker.hasItem('Choice Band') && move.category === 'Physical') ||
-      (attacker.hasItem('Choice Specs') && move.category === 'Special'))
+    (attacker.hasItem('Choice Band') && move.category === 'Physical') ||
+      (attacker.hasItem('Choice Specs') && move.category === 'Special') ||
+      (attacker.hasItem('Venom Engine') && attacker.named('Venudrio') ||
+      (attacker.hasItem('Magma Engine') && move.category === 'Physical') && attacker.named('Weepinmeleon') ||
+      (attacker.hasItem('Nature Engine') && move.category === 'Special') && attacker.named('Weepinmeleon'))
   ) {
     atMods.push(6144);
     desc.attackerItem = attacker.item;

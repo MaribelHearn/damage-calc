@@ -225,6 +225,7 @@ export function getZMoveName(moveName: string, moveType: I.TypeName, item?: stri
 const ZMOVES_TYPING: {
   [type in I.TypeName]?: string;
 } = {
+  '???': 'Unreal Unraveling',
   Bug: 'Savage Spin-Out',
   Dark: 'Black Hole Eclipse',
   Dragon: 'Devastating Drake',
@@ -316,6 +317,7 @@ export function getMaxMoveName(
 const MAXMOVES_TYPING: {
   [type in I.TypeName]?: string;
 } = {
+  '???': 'Mystery',
   Bug: 'Flutterby',
   Dark: 'Darkness',
   Dragon: 'Wyrmwind',
