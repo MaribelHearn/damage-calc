@@ -149,6 +149,11 @@ export function getMoveEffectiveness(
     return 1;
   } else if (move.named('Freeze-Dry') && type === 'Water') {
     return 2;
+  // Fundex: moves that override super effectiveness
+  } else if ((move.named('Evil-Sealing Circle') || move.named('Light Arrow')) && type === 'Dark') {
+    return 2;
+  } else if (move.named('Acid Bomb') && type === 'Steel') {
+    return 2;
   } else {
     let effectiveness = gen.types.get(toID(move.type))!.effectiveness[type]!;
     if (effectiveness === 0 && isRingTarget) {
@@ -157,6 +162,9 @@ export function getMoveEffectiveness(
     if (move.named('Flying Press')) {
       // Can only do this because flying has no other interactions
       effectiveness *= gen.types.get('flying' as ID)!.effectiveness[type]!;
+    }
+    if (move.named('Hand of Destruction') && effectiveness > 1) {
+      return effectiveness * 1.5;
     }
     return effectiveness;
   }

@@ -3690,6 +3690,7 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
 		type: 'Psychic',
 		category: 'Special',
 		makesContact: true,
+    multihit: 2,
 	},
 	'Evil-Sealing Circle': {
 		bp: 70,
@@ -4179,6 +4180,7 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
 		type: 'Ghost',
 		category: 'Physical',
 		makesContact: true,
+    ignoreDefensive: true,
 	},
 	'Arrow Rain': {
 		bp: 80,
@@ -4209,6 +4211,7 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
 		type: 'Normal',
 		category: 'Physical',
 		isArrow: true,
+    willCrit: true,
 	},
 	'Light Arrow': {
 		bp: 70,
@@ -4276,12 +4279,14 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
 		bp: 80,
 		type: 'Psychic',
 		category: 'Physical',
+    overrideOffensiveStat: 'spd',
 		makesContact: true,
 	},
 	'Shield Bash': {
 		bp: 80,
 		type: 'Steel',
 		category: 'Physical',
+    overrideOffensiveStat: 'def',
 		makesContact: true,
 	},
 	'Tornado Tentacle': {

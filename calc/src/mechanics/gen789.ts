@@ -260,6 +260,9 @@ export function calculateSMSSSV(
     type = gift.t;
     desc.moveType = type;
     desc.attackerItem = attacker.item;
+  // Fundex: type changing moves
+  } else if (move.named('Catnarok')) {
+    type = attacker.types[0];
   } else if (
     move.named('Nature Power') ||
     (move.originalName === 'Terrain Pulse' && isGrounded(attacker, field))
@@ -331,6 +334,8 @@ export function calculateSMSSSV(
   let isPixilate = false;
   let isRefrigerate = false;
   let isGalvanize = false;
+  let isCorruption = false;
+  let isConflagrate = false;
   let isLiquidVoice = false;
   let isNormalize = false;
   const noTypeChange = move.named(
@@ -359,8 +364,12 @@ export function calculateSMSSSV(
       type = 'Ice';
     } else if ((isNormalize = attacker.hasAbility('Normalize'))) { // Boosts any type
       type = 'Normal';
+    } else if ((isCorruption = attacker.hasAbility('Corruption') && normal)) {
+      type = '???';
+    } else if ((isConflagrate = attacker.hasAbility('Conflagrate') && normal)) {
+      type = 'Fire';
     }
-    if (isGalvanize || isPixilate || isRefrigerate || isAerilate || isNormalize) {
+    if (isGalvanize || isPixilate || isRefrigerate || isAerilate || isNormalize || isCorruption || isConflagrate) {
       desc.attackerAbility = attacker.ability;
       hasAteAbilityTypeChange = true;
     } else if (isLiquidVoice) {
@@ -1164,7 +1173,9 @@ export function calculateBPModsSMSSSV(
     (attacker.hasAbility('Mega Launcher') && move.flags.pulse) ||
     (attacker.hasAbility('Strong Jaw') && move.flags.bite) ||
     (attacker.hasAbility('Steely Spirit') && move.hasType('Steel')) ||
-    (attacker.hasAbility('Sharpness') && move.flags.slicing)
+    (attacker.hasAbility('Sharpness') && move.flags.slicing) ||
+    (attacker.hasAbility('Laser Mouth') && move.flags.beam) ||
+    (attacker.hasAbility('Sharpshooter') && move.flags.arrow)
   ) {
     bpMods.push(6144);
     desc.attackerAbility = attacker.ability;
@@ -1333,6 +1344,11 @@ export function calculateAttackSMSSSV(
 
   // unlike all other attack modifiers, Hustle gets applied directly
   if (attacker.hasAbility('Hustle') && move.category === 'Physical') {
+    attack = pokeRound((attack * 3) / 2);
+    desc.attackerAbility = attacker.ability;
+  }
+  // Fundex: Insanity is the Special equivalent of Hustle
+  if (attacker.hasAbility('Insanity') && move.category === 'Special') {
     attack = pokeRound((attack * 3) / 2);
     desc.attackerAbility = attacker.ability;
   }

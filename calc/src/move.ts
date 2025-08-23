@@ -215,6 +215,18 @@ export function getZMoveName(moveName: string, moveType: I.TypeName, item?: stri
   if (moveName === 'Sunsteel Strike' && item === 'Solganium Z') return 'Searing Sunraze Smash';
   if (moveName === 'Volt Tackle' && item === 'Pikanium Z') return 'Catastropika';
   if (moveName === 'Nature\'s Madness' && item === 'Tapunium Z') return 'Guardian of Alola';
+  // Fundex Z-moves
+  if (moveName === 'Hyper Beam' && item === 'Cellium Z') return 'IMMA FIRIN MAH LAZER!!';
+  if (moveName === 'Diamond Blizzard' && item === 'Cirnium Z') return 'Perfect Freeze';
+  if (moveName === 'High Jump Kick' && item === 'Leonidium Z') return 'Sparta Kick';
+  if (moveName === 'Nuke' && item === 'Utsuhonium Z') return 'Uncontainable Nuclear Reaction';
+  if (moveName === 'Ghastly Dream' && item === 'Yuyukium Z') return 'Saigyouji Flawless Nirvana';
+  if (moveName === 'Earthquake' && item === 'Crabium Z') return 'Massive Damage';
+  if (moveName === 'Energy Ball' && item === 'Kagium Z') return 'Hourai Jewel';
+  if (moveName === 'Sacred Fire' && item === 'Mokium Z') return 'Imperishable Shooting';
+  if (moveName === 'Recover' && item === 'Winnerium Z') return 'Medicine of Life';
+  if (moveName === 'Slash of Eternity' && item === 'Youmium Z') return '200 Yojana in 1 Slash';
+  if (moveName === 'Cosmic Power' && item === 'Maribium Z') return 'Overflowing Unnatural Power';
   if (moveName === 'Thunderbolt') {
     if (item === 'Aloraichium Z') return 'Stoked Sparksurfer';
     if (item === 'Pikashunium Z') return '10,000,000 Volt Thunderbolt';
