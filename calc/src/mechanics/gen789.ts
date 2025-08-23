@@ -261,7 +261,7 @@ export function calculateSMSSSV(
     desc.moveType = type;
     desc.attackerItem = attacker.item;
   // Fundex: type changing moves
-  } else if (move.named('Catnarok')) {
+  } else if (move.named('Catnarok') || move.named('Rainbow UFOs of Terror')) {
     type = attacker.types[0];
   } else if (
     move.named('Nature Power') ||
@@ -597,11 +597,13 @@ export function calculateSMSSSV(
     move.named('Shell Side Arm') &&
     getShellSideArmCategory(attacker, defender) === 'Physical'
       ? 'atk'
-      : move.named('Body Press')
+      : move.named('Body Press') || move.named('Shield Bash')
         ? 'def'
-        : move.category === 'Special'
-          ? 'spa'
-          : 'atk';
+        : move.named('Barrier Crash')
+          ? 'spd'
+          : move.category === 'Special'
+            ? 'spa'
+            : 'atk';
   // #endregion
 
   // #region (Special) Defense
