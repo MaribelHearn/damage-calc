@@ -4049,7 +4049,7 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
 		category: 'Status',
 	},
 	'Washing Machine': {
-		bp: 110,
+		bp: 140,
 		type: 'Water',
 		category: 'Special',
 		isBullet: true,
