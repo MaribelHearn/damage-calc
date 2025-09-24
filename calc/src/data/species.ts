@@ -8759,12 +8759,11 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     baseSpecies: 'Zigzagoon',
   },
   // Fundex
-	tentaquil: {
+tentaquil: {
 		types: ['Bug', 'Psychic'],
 		bs: {hp: 100, at: 100, df: 100, sa: 100, sd: 100, sp: 100},
 		weightkg: 90,
 		abilities: {0: 'Immunity'},
-		otherFormes: ['tentaquix'],
 	},
 	'Chuck Norris': {
 		types: ['Fighting'],
@@ -8802,7 +8801,7 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
 		bs: {hp: 100, at: 135, df: 72, sa: 155, sd: 133, sp: 40},
 		weightkg: 90,
 		abilities: {0: 'Imposing'},
-		baseSpecies: 'Mega Dennis',
+		baseSpecies: 'Dennis',
 	},
 	Zalgo: {
 		types: ['???'],
@@ -8852,14 +8851,14 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
 		bs: {hp: 110, at: 110, df: 70, sa: 60, sd: 70, sp: 100},
 		weightkg: 45,
 		abilities: {0: 'Sniper'},
-		baseSpecies: 'Mr. L',
+		baseSpecies: 'Luigi',
 	},
 	Weegee: {
 		types: ['Grass'],
 		bs: {hp: 110, at: 70, df: 100, sa: 70, sd: 120, sp: 50},
 		weightkg: 45,
 		abilities: {0: 'Intimidate'},
-		baseSpecies: 'Weegee',
+		baseSpecies: 'Luigi',
 	},
 	Giygas: {
 		types: ['Dark', 'Ghost'],
@@ -8899,17 +8898,17 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
 	},
 	Cirno: {
 		types: ['Ice', 'Fairy'],
-		bs: {hp: 71, at: 60, df: 70, sa: 119, sd: 91, sp: 99},
+		bs: {hp: 99, at: 49, df: 49, sa: 119, sd: 99, sp: 99},
 		weightkg: 45,
 		abilities: {0: 'Vital Spirit'},
 		otherFormes: ['Achi Cirno'],
 	},
 	'Achi Cirno': {
 		types: ['Fire', 'Fairy'],
-		bs: {hp: 71, at: 119, df: 91, sa: 60, sd: 70, sp: 99},
+		bs: {hp: 99, at: 49, df: 99, sa: 119, sd: 49, sp: 99},
 		weightkg: 45,
 		abilities: {0: 'Vital Spirit'},
-		baseSpecies: 'Achi Cirno',
+		baseSpecies: 'Cirno',
 	},
 	Reimu: {
 		types: ['Normal', 'Psychic'],
@@ -8959,7 +8958,7 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
 		bs: {hp: 79, at: 140, df: 85, sa: 150, sd: 85, sp: 101},
 		weightkg: 90,
 		abilities: {0: 'No Guard'},
-		baseSpecies: 'Super Saiyan Vegeta',
+		baseSpecies: 'Vegeta',
 	},
 	'Dr. Octogonapus': {
 		types: ['Psychic', 'Flying'],
@@ -8985,7 +8984,7 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
 		bs: {hp: 90, at: 102, df: 90, sa: 144, sd: 90, sp: 104},
 		weightkg: 90,
 		abilities: {0: 'Truant'},
-		baseSpecies: 'Corrupted Wake',
+		baseSpecies: 'Crasher Wake',
 	},
 	Utsuho: {
 		types: ['Fire', 'Flying'],
@@ -8993,7 +8992,7 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
 		weightkg: 45,
 		abilities: {0: 'Immunity'},
 	},
-  Yuyuko: {
+	Yuyuko: {
 		types: ['Ghost', 'Grass'],
 		bs: {hp: 110, at: 90, df: 60, sa: 130, sd: 110, sp: 50},
 		weightkg: 45,
@@ -9010,7 +9009,6 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
 		bs: {hp: 80, at: 115, df: 125, sa: 70, sd: 70, sp: 70},
 		weightkg: 90,
 		abilities: {0: 'Justified'},
-		otherFormes: ['Toon Link'],
 	},
 	'Young Zelda': {
 		types: ['Fairy'],
@@ -9030,7 +9028,7 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
 		bs: {hp: 70, at: 115, df: 85, sa: 50, sd: 105, sp: 105},
 		weightkg: 45,
 		abilities: {0: 'Quick Feet'},
-		baseSpecies: 'Sheik',
+		baseSpecies: 'Zelda',
 	},
 	Ganondorf: {
 		types: ['Dark', 'Fighting'],
@@ -9044,7 +9042,7 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
 		bs: {hp: 100, at: 150, df: 100, sa: 100, sd: 150, sp: 30},
 		weightkg: 250,
 		abilities: {0: 'Beast Boost'},
-		baseSpecies: 'Ganon',
+		baseSpecies: 'Ganondorf',
 	},
 	Suiseiseki: {
 		types: ['Normal', 'Grass'],
@@ -9058,7 +9056,7 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
 		weightkg: 90,
 		abilities: {0: 'Anticipation'},
 	},
-	Yoda: {
+Yoda: {
 		types: ['Psychic'],
 		bs: {hp: 85, at: 81, df: 94, sa: 130, sd: 115, sp: 30},
 		weightkg: 45,
@@ -9109,7 +9107,7 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
 	'Leeroy Jenkins': {
 		types: ['Fighting', 'Steel'],
 		bs: {hp: 90, at: 110, df: 65, sa: 116, sd: 55, sp: 94},
-		weightkg: 45,
+		weightkg: 90,
 		abilities: {0: 'Reckless'},
 	},
 	Remilia: {
@@ -9290,14 +9288,14 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
 	Samus: {
 		types: ['Electric'],
 		bs: {hp: 60, at: 100, df: 80, sa: 90, sd: 80, sp: 110},
-		weightkg: 90,
+		weightkg: 45,
 		abilities: {0: 'Armor Damage'},
-		otherFormes: ['Armored Samus'],
+		otherFormes: ['Samus-Armored'],
 	},
 	'Samus-Armored': {
 		types: ['Electric', 'Steel'],
 		bs: {hp: 60, at: 100, df: 120, sa: 120, sd: 80, sp: 40},
-		weightkg: 45,
+		weightkg: 90,
 		abilities: {0: 'Armor Damage'},
 		baseSpecies: 'Samus',
 	},
@@ -9307,7 +9305,7 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
 		weightkg: 45,
 		abilities: {0: 'Huge Power'},
 	},
-  Yumemi: {
+	Yumemi: {
 		types: ['Fire', 'Ice'],
 		bs: {hp: 90, at: 65, df: 75, sa: 130, sd: 85, sp: 90},
 		weightkg: 45,
@@ -9421,7 +9419,7 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
 		bs: {hp: 60, at: 85, df: 70, sa: 120, sd: 115, sp: 130},
 		weightkg: 45,
 		abilities: {0: 'Flash Fire'},
-		baseSpecies: 'Hibachi 2',
+		baseSpecies: 'Hibachi',
 	},
 	'Evaccania DOOM': {
 		types: ['Bug', 'Flying'],
@@ -9465,14 +9463,14 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
 		bs: {hp: 80, at: 135, df: 115, sa: 95, sd: 45, sp: 70},
 		weightkg: 75,
 		abilities: {0: 'Weak Armor'},
-		baseSpecies: 'Dry Bowser',
+		baseSpecies: 'Bowser',
 	},
 	'Giga Bowser': {
 		types: ['Dragon', 'Fire'],
 		bs: {hp: 90, at: 150, df: 140, sa: 130, sd: 80, sp: 50},
 		weightkg: 350,
 		abilities: {0: 'Sheer Force'},
-		baseSpecies: 'Giga Bowser',
+		baseSpecies: 'Bowser',
 	},
 	Genjii: {
 		types: ['Rock', 'Flying'],
@@ -9485,28 +9483,28 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
 		bs: {hp: 90, at: 95, df: 85, sa: 115, sd: 85, sp: 90},
 		weightkg: 45,
 		abilities: {0: 'Blaze'},
-		otherFormes: [''],
+		otherFormes: ['Angel VIVIT'],
 	},
 	'Angel VIVIT': {
 		types: ['Fire', 'Flying'],
 		bs: {hp: 90, at: 95, df: 90, sa: 155, sd: 105, sp: 125},
 		weightkg: 45,
 		abilities: {0: 'Turboblaze'},
-		baseSpecies: 'Angel VIVIT',
+		baseSpecies: 'VIVIT',
 	},
 	Maribel: {
 		types: ['Psychic'],
 		bs: {hp: 60, at: 60, df: 70, sa: 110, sd: 140, sp: 80},
 		weightkg: 45,
 		abilities: {0: 'Comatose'},
-		otherFormes: [''],
+		otherFormes: ['Berserk Maribel'],
 	},
 	'Berserk Maribel': {
 		types: ['Psychic', 'Dark'],
 		bs: {hp: 60, at: 90, df: 100, sa: 140, sd: 160, sp: 70},
 		weightkg: 45,
 		abilities: {0: 'Berserk'},
-		baseSpecies: 'Berserk Maribel',
+		baseSpecies: 'Maribel',
 	},
 	Kogasa: {
 		types: ['Ghost'],
@@ -9543,7 +9541,7 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
 		bs: {hp: 110, at: 115, df: 115, sa: 115, sd: 115, sp: 110},
 		weightkg: 45,
 		abilities: {0: 'Pressure'},
-		otherFormes: [''],
+		otherFormes: ['Shingyoku-Priestess', 'Shingyoku-Orb'],
 	},
 	'Shingyoku-Priestess': {
 		types: ['???'],
@@ -9616,7 +9614,7 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
 	'Nyan Cat': {
 		types: ['Normal', 'Fairy'],
 		bs: {hp: 75, at: 80, df: 65, sa: 92, sd: 65, sp: 123},
-		weightkg: 45,
+		weightkg: 15,
 		abilities: {0: 'Soundproof'},
 	},
 	Mario: {
@@ -9631,14 +9629,14 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
 		bs: {hp: 80, at: 100, df: 85, sa: 90, sd: 80, sp: 85},
 		weightkg: 0.1,
 		abilities: {0: 'Paper Cut'},
-		baseSpecies: 'Paper Mario',
+		baseSpecies: 'Mario',
 	},
 	Malleo: {
 		types: ['Fire'],
 		bs: {hp: 80, at: 140, df: 65, sa: 140, sd: 55, sp: 40},
 		weightkg: 150,
 		abilities: {0: 'Intimidate'},
-		baseSpecies: 'Malleo',
+		baseSpecies: 'Mario',
 	},
 	Boo: {
 		types: ['Ghost'],
@@ -9652,7 +9650,7 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
 		bs: {hp: 50, at: 130, df: 130, sa: 130, sd: 130, sp: 50},
 		weightkg: 0.1,
 		abilities: {0: 'Get Together'},
-		baseSpecies: 'Boolossus',
+		baseSpecies: 'Boo',
 	},
 	'King Boo': {
 		types: ['Ghost'],
@@ -9770,7 +9768,7 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
 		weightkg: 90,
 		abilities: {0: 'Clear Body'},
 	},
-	'Blue Screen of Death': {
+	'Blue Screen': {
 		types: ['Bug', 'Electric'],
 		bs: {hp: 40, at: 30, df: 190, sa: 10, sd: 190, sp: 5},
 		weightkg: 0.1,
@@ -9809,7 +9807,7 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
 	'Recycle Bin': {
 		types: ['Normal'],
 		bs: {hp: 100, at: 70, df: 105, sa: 30, sd: 105, sp: 50},
-		weightkg: 45,
+		weightkg: 0.1,
 		abilities: {0: 'Harvest'},
 	},
 	Hina: {
@@ -9913,14 +9911,14 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
 		bs: {hp: 50, at: 70, df: 80, sa: 70, sd: 110, sp: 50},
 		weightkg: 60,
 		abilities: {0: 'White Smoke'},
-		otherFormes: [''],
+		otherFormes: ['Grandmatriarch'],
 	},
 	Grandmatriarch: {
 		types: ['Poison', 'Ground'],
 		bs: {hp: 50, at: 140, df: 110, sa: 30, sd: 170, sp: 30},
 		weightkg: 120,
 		abilities: {0: 'Parental Bond'},
-		baseSpecies: 'Grandmatriarch',
+		baseSpecies: 'Grandma',
 	},
 };
 
