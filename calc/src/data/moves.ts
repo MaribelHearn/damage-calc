@@ -4435,6 +4435,12 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     category: 'Special',
     isZ: true,
   },
+  'Perfect Burn': {
+    bp: 185,
+    type: 'Fire',
+    category: 'Special',
+    isZ: true,
+  },
   'Sparta Kick': {
     bp: 190,
     type: 'Fighting',
