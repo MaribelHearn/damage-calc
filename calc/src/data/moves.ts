@@ -3762,6 +3762,7 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
 		bp: 150,
 		type: 'Psychic',
 		category: 'Special',
+    overrideOffensiveStat: 'def',
 	},
 	'Suzuran Poison': {
 		bp: 80,
