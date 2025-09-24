@@ -1412,6 +1412,9 @@ var gen, genWasChanged, notation, pokedex, setdex, randdex, typeChart, moves, ab
 $(".gen").change(function () {
 	/*eslint-disable */
 	gen = ~~$(this).val() || 8;
+	if (gen === 10) {
+		gen = 8;
+	}
 	GENERATION = calc.Generations.get(gen);
 	var params = new URLSearchParams(window.location.search);
 	if (gen === 9) {
