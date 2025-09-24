@@ -8766,13 +8766,6 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
 		abilities: {0: 'Immunity'},
 		otherFormes: ['tentaquix'],
 	},
-	tentaquix: {
-		types: ['Bug', 'Fairy'],
-		bs: {hp: 100, at: 80, df: 110, sa: 65, sd: 125, sp: 120},
-		weightkg: 90,
-		abilities: {0: 'Limber'},
-		baseSpecies: 'tentaquix',
-	},
 	'Chuck Norris': {
 		types: ['Fighting'],
 		bs: {hp: 120, at: 160, df: 130, sa: 80, sd: 130, sp: 100},
@@ -9018,13 +9011,6 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
 		weightkg: 90,
 		abilities: {0: 'Justified'},
 		otherFormes: ['Toon Link'],
-	},
-	'Toon Link': {
-		types: ['Fairy', 'Fighting'],
-		bs: {hp: 80, at: 105, df: 95, sa: 80, sd: 70, sp: 100},
-		weightkg: 45,
-		abilities: {0: 'Cute Charm'},
-		baseSpecies: 'Toon Link',
 	},
 	'Young Zelda': {
 		types: ['Fairy'],
