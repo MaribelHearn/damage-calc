@@ -1464,8 +1464,9 @@ $(".gen").change(function () {
 function getFirstValidSetOption() {
 	var sets = getSetOptions();
 	// NB: The first set is never valid, so we start searching after it.
+	// Fundex: make tentaquil the default
 	for (var i = 1; i < sets.length; i++) {
-		if (sets[i].id && sets[i].id.indexOf('(Blank Set)') === -1) return sets[i];
+		if (sets[i].id && sets[i].id.startsWith("tentaquil")) return sets[i];
 	}
 	return undefined;
 }
