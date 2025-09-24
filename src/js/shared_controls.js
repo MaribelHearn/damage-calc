@@ -1411,7 +1411,9 @@ var gen, genWasChanged, notation, pokedex, setdex, randdex, typeChart, moves, ab
 
 $(".gen").change(function () {
 	/*eslint-disable */
-	gen = ~~$(this).val() || 8;
+	//gen = ~~$(this).val() || 8;
+	// Fundex: temp override gen to always be 8
+	gen = 8;
 	GENERATION = calc.Generations.get(gen);
 	var params = new URLSearchParams(window.location.search);
 	if (gen === 9) {
@@ -1797,7 +1799,9 @@ function loadCustomList(id) {
 
 $(document).ready(function () {
 	var params = new URLSearchParams(window.location.search);
-	var g = GENERATION[params.get('gen')] || 8;
+	//var g = GENERATION[params.get('gen')] || 8;
+	// Fundex: temp override gen to always be 8
+	var g = 8;
 	$("#gen" + g).prop("checked", true);
 	$("#gen" + g).change();
 	$("#percentage").prop("checked", true);
