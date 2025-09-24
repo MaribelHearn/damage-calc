@@ -7,6 +7,7 @@ export type TypeChart = {
 
 const RBY: TypeChart = {
   '???': {
+    '???': 1,
     Normal: 1,
     Grass: 1,
     Fire: 1,
