@@ -664,6 +664,11 @@ function getEndOfTurn(
       damage += Math.floor(defender.maxHP() / 16);
       texts.push('Grassy Terrain recovery');
     }
+  } else if (field.hasTerrain('Glitchy')) {
+    if (isGrounded(defender, field) && !defender.hasType('???')) {
+      damage += Math.floor(defender.maxHP() / 16);
+      texts.push('Glitchy Terrain damage');
+    }
   }
 
   if (defender.hasStatus('psn')) {

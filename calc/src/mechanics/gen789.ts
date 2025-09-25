@@ -272,6 +272,7 @@ export function calculateSMSSSV(
       : field.hasTerrain('Grassy') ? 'Grass'
       : field.hasTerrain('Misty') ? 'Fairy'
       : field.hasTerrain('Psychic') ? 'Psychic'
+      : field.hasTerrain('Glitchy') ? '???'
       : 'Normal';
     desc.terrain = field.terrain;
 
@@ -714,7 +715,7 @@ export function calculateSMSSSV(
       // Check if lost -ate ability. Typing stays the same, only boost is lost
       // Cannot be regained during multihit move and no Normal moves with stat drawbacks
       hasAteAbilityTypeChange = hasAteAbilityTypeChange &&
-        attacker.hasAbility('Aerilate', 'Galvanize', 'Pixilate', 'Refrigerate', 'Normalize');
+        attacker.hasAbility('Aerilate', 'Galvanize', 'Pixilate', 'Refrigerate', 'Normalize', 'Corruption', 'Conflagrate');
 
       if (move.timesUsed! > 1) {
         // Adaptability does not change between hits of a multihit, only between turns
@@ -1247,7 +1248,8 @@ export function calculateBPModsSMSSSV(
   }
 
   if ((attacker.hasAbility('Reckless') && (move.recoil || move.hasCrashDamage)) ||
-      (attacker.hasAbility('Iron Fist') && move.flags.punch)
+      (attacker.hasAbility('Iron Fist') && move.flags.punch) ||
+      (attacker.hasAbility('Elementalist') && (move.hasType('Fire') || move.hasType('Water') || move.hasType('Grass') || move.hasType('Steel') || move.hasType('Ground')))
   ) {
     bpMods.push(4915);
     desc.attackerAbility = attacker.ability;
