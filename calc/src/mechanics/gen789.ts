@@ -1150,7 +1150,8 @@ export function calculateBPModsSMSSSV(
   if (isGrounded(attacker, field)) {
     if ((field.hasTerrain('Electric') && move.hasType('Electric')) ||
         (field.hasTerrain('Grassy') && move.hasType('Grass')) ||
-        (field.hasTerrain('Psychic') && move.hasType('Psychic'))
+        (field.hasTerrain('Psychic') && move.hasType('Psychic')) ||
+        (field.hasTerrain('Glitchy') && move.hasType('???'))
     ) {
       bpMods.push(terrainMultiplier);
       desc.terrain = field.terrain;
