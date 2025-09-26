@@ -1210,7 +1210,7 @@ function createField() {
 	var isAuroraVeil = [$("#auroraVeilL").prop("checked"), $("#auroraVeilR").prop("checked")];
 	var isBattery = [$("#batteryL").prop("checked"), $("#batteryR").prop("checked")];
 	var isPowerSpot = [$("#powerSpotL").prop("checked"), $("#powerSpotR").prop("checked")];
-	// TODO: support switching in as well!
+	var isSwitchedIn = [$("#switchedL").prop("checked"), $("#switchedR").prop("checked")];
 	var isSwitchingOut = [$("#switchingL").prop("checked"), $("#switchingR").prop("checked")];
 
 	var createSide = function (i) {
@@ -1236,6 +1236,7 @@ function createField() {
 			isAuroraVeil: isAuroraVeil[i],
 			isBattery: isBattery[i],
 			isPowerSpot: isPowerSpot[i],
+			isSwitched: isSwitchedIn[i],
 			isSwitching: isSwitchingOut[i] ? 'out' : undefined
 		});
 	};
