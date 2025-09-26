@@ -3785,6 +3785,8 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
 		type: '???',
 		category: 'Physical',
 		isBullet: true,
+    willCrit: true,
+    breaksProtect: true,
 	},
 	'Study': {
 		bp: 0,
