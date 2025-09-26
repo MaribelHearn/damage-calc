@@ -3762,7 +3762,7 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
 		bp: 150,
 		type: 'Psychic',
 		category: 'Special',
-    overrideOffensiveStat: 'def',
+		overrideOffensiveStat: 'def',
 	},
 	'Suzuran Poison': {
 		bp: 80,
@@ -3785,8 +3785,8 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
 		type: '???',
 		category: 'Physical',
 		isBullet: true,
-    willCrit: true,
-    breaksProtect: true,
+		willCrit: true,
+		breaksProtect: true,
 	},
 	'Study': {
 		bp: 0,
@@ -4282,14 +4282,14 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
 		bp: 80,
 		type: 'Psychic',
 		category: 'Physical',
-    overrideOffensiveStat: 'spd',
+		overrideOffensiveStat: 'spd',
 		makesContact: true,
 	},
 	'Shield Bash': {
 		bp: 80,
 		type: 'Steel',
 		category: 'Physical',
-    overrideOffensiveStat: 'def',
+		overrideOffensiveStat: 'def',
 		makesContact: true,
 	},
 	'Tornado Tentacle': {
