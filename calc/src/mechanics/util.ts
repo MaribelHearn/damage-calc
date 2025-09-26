@@ -163,6 +163,9 @@ export function getMoveEffectiveness(
       // Can only do this because flying has no other interactions
       effectiveness *= gen.types.get('flying' as ID)!.effectiveness[type]!;
     }
+    if (move.named('Nuke')) {
+      effectiveness *= gen.types.get('poison' as ID)!.effectiveness[type]!;
+    }
     if (move.named('Hand of Destruction') && effectiveness > 1) {
       return effectiveness * 1.5;
     }

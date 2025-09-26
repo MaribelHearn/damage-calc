@@ -3803,7 +3803,7 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
 		category: 'Physical',
 		makesContact: true,
 	},
-	'LOL WUT?': {
+	'LOL WUT': {
 		bp: 50,
 		type: 'Poison',
 		category: 'Physical',
@@ -3872,7 +3872,6 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
 		bp: 0,
 		type: 'Fighting',
 		category: 'Physical',
-		priority: -5,
 	},
 	'Thunder Drum Shot': {
 		bp: 80,
@@ -4435,12 +4434,6 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     category: 'Special',
     isZ: true,
   },
-  'Perfect Burn': {
-    bp: 185,
-    type: 'Fire',
-    category: 'Special',
-    isZ: true,
-  },
   'Sparta Kick': {
     bp: 190,
     type: 'Fighting',
@@ -4497,6 +4490,12 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     bp: 0,
     type: '???',
     category: 'Status',
+  },
+  'Perfect Burn': {
+    bp: 185,
+    type: 'Fire',
+    category: 'Special',
+    isZ: true,
   },
   '10,000,000 Volt Thunderbolt': {maxPower: 1},
   Absorb: {maxPower: 90},
