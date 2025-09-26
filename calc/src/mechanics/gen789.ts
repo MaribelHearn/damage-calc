@@ -817,6 +817,12 @@ export function calculateBasePowerSMSSSV(
     if (switching) desc.isSwitching = 'out';
     desc.moveBP = basePower;
     break;
+  case 'Pingas':
+    const switched = field.defenderSide.isSwitched;
+    basePower = move.bp * (switched ? 2 : 1);
+    if (switched) desc.isSwitched = true;
+    desc.moveBP = basePower;
+    break;
   case 'Electro Ball':
     const r = Math.floor(attacker.stats.spe / defender.stats.spe);
     basePower = r >= 4 ? 150 : r >= 3 ? 120 : r >= 2 ? 80 : r >= 1 ? 60 : 40;

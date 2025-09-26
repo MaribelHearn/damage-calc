@@ -42,6 +42,7 @@ export interface RawDesc {
   isBattery?: boolean;
   isPowerSpot?: boolean;
   isWonderRoom?: boolean;
+  isSwitched?: boolean;
   isSwitching?: 'out' | 'in';
   moveBP?: number;
   moveName: string;
@@ -1008,6 +1009,9 @@ function buildDescription(description: RawDesc, attacker: Pokemon, defender: Pok
   }
   if (description.isSwitching) {
     output += 'switching boosted ';
+  }
+  if (description.isSwitched) {
+    output += 'switch boosted ';
   }
   output += description.moveName + ' ';
   if (description.moveBP && description.moveType) {

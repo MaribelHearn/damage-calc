@@ -3747,11 +3747,14 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
 		type: 'Fighting',
 		category: 'Physical',
 		makesContact: true,
+    multihit: 3,
+    multiaccuracy: true,
 	},
 	'Strawberry Cross': {
 		bp: 50,
 		type: 'Fire',
 		category: 'Special',
+    multihit: 2,
 	},
 	'Iwakasa\'s Curse': {
 		bp: 80,
@@ -3773,7 +3776,10 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
 		bp: 20,
 		type: 'Psychic',
 		category: 'Physical',
+		overrideOffensiveStat: 'def',
 		makesContact: true,
+    multihit: 10,
+    multiaccuracy: true,
 	},
 	'Hourai Elixir': {
 		bp: 0,

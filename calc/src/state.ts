@@ -76,6 +76,7 @@ export namespace State {
     isBattery?: boolean;
     isPowerSpot?: boolean;
     isSteelySpirit?: boolean;
+    isSwitched?: boolean; // Fundex: switch-in check for Pingas
     isSwitching?: 'out' | 'in';
   }
 }
