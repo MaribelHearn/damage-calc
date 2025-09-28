@@ -8773,9 +8773,9 @@ tentaquil: {
 	},
 	'Captain Falcon': {
 		types: ['Fire', 'Electric'],
-		bs: {hp: 80, at: 90, df: 80, sa: 55, sd: 70, sp: 120},
+		bs: {hp: 80, at: 110, df: 80, sa: 55, sd: 70, sp: 130},
 		weightkg: 90,
-		abilities: {0: 'Boost Power'},
+		abilities: {0: 'Speed Boost'},
 	},
 	Flandre: {
 		types: ['Dark', 'Fire'],
