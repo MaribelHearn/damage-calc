@@ -166,6 +166,9 @@ export function getMoveEffectiveness(
     if (move.named('Nuke')) {
       effectiveness *= gen.types.get('poison' as ID)!.effectiveness[type]!;
     }
+    if (move.named('Monster Cucumber')) {
+      effectiveness *= gen.types.get('water' as ID)!.effectiveness[type]!;
+    }
     if (move.named('Hand of Destruction') && effectiveness > 1) {
       return effectiveness * 1.5;
     }

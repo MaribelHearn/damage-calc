@@ -3652,12 +3652,12 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
 		bp: 130,
 		type: 'Electric',
 		category: 'Special',
+		isBeam: true,
 	},
 	'Puke Blood': {
 		bp: 80,
 		type: 'Psychic',
 		category: 'Special',
-		isPulse: true,
 	},
 	'Round House Kick': {
 		bp: 80,
@@ -3675,7 +3675,7 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
 		isPunch: true,
 	},
 	'Laevateinn': {
-		bp: 120,
+		bp: 110,
 		type: 'Fire',
 		category: 'Physical',
 		makesContact: true,
@@ -3689,7 +3689,6 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
 		bp: 50,
 		type: 'Psychic',
 		category: 'Special',
-		makesContact: true,
     multihit: 2,
 	},
 	'Evil-Sealing Circle': {
@@ -3712,6 +3711,7 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
 		bp: 100,
 		type: 'Fire',
 		category: 'Special',
+		isBullet: true,
 	},
 	'Ghastly Dream': {
 		bp: 80,
@@ -3754,7 +3754,6 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
 		bp: 50,
 		type: 'Fire',
 		category: 'Special',
-    multihit: 2,
 	},
 	'Iwakasa\'s Curse': {
 		bp: 80,
@@ -3768,14 +3767,14 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
 		overrideOffensiveStat: 'def',
 	},
 	'Suzuran Poison': {
-		bp: 80,
+		bp: 50,
 		type: 'Poison',
 		category: 'Special',
 	},
 	'Lemmings Parade': {
 		bp: 20,
 		type: 'Psychic',
-		category: 'Physical',
+		category: 'Special',
 		overrideOffensiveStat: 'def',
 		makesContact: true,
     multihit: 10,
@@ -3790,9 +3789,8 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
 		bp: 255,
 		type: '???',
 		category: 'Physical',
-		isBullet: true,
-		willCrit: true,
 		breaksProtect: true,
+    willCrit: true,
 	},
 	'Study': {
 		bp: 0,
@@ -3841,7 +3839,6 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
 		bp: 250,
 		type: 'Normal',
 		category: 'Physical',
-		isPunch: true,
 	},
 	'PSI Rockin': {
 		bp: 150,
@@ -3854,7 +3851,7 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
 		category: 'Status',
 		priority: 4,
 	},
-	'Umadbro?': {
+	'u mad bro': {
 		bp: 1,
 		type: 'Dark',
 		category: 'Special',
@@ -3880,11 +3877,13 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
 		bp: 0,
 		type: 'Fighting',
 		category: 'Physical',
+		isSound: true,
 	},
 	'Thunder Drum Shot': {
 		bp: 80,
 		type: 'Electric',
 		category: 'Special',
+		isSound: true,
 	},
 	'Needle Parade': {
 		bp: 100,
@@ -3899,7 +3898,7 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
 		isBullet: true,
 	},
 	'ZZZAP!': {
-		bp: 70,
+		bp: 50,
 		type: 'Electric',
 		category: 'Special',
 	},
@@ -3950,7 +3949,7 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
 		type: 'Steel',
 		category: 'Special',
 	},
-	'Mishaguji-Sama': {
+	'Mishaguji-sama': {
 		bp: 80,
 		type: 'Ground',
 		category: 'Special',
@@ -3966,6 +3965,7 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
 		bp: 120,
 		type: 'Rock',
 		category: 'Physical',
+		makesContact: true,
 	},
 	'Recollection': {
 		bp: 0,
@@ -4020,6 +4020,7 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
 		bp: 0,
 		type: 'Dark',
 		category: 'Status',
+		isSound: true,
 	},
 	'Super Glitch': {
 		bp: 73,
@@ -4030,6 +4031,7 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
 		bp: 100,
 		type: 'Normal',
 		category: 'Physical',
+		makesContact: true,
 	},
 	'Miracle Fruit': {
 		bp: 0,
@@ -4037,7 +4039,7 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
 		category: 'Status',
 	},
 	'Count Down': {
-		bp: 200,
+		bp: 150,
 		type: 'Dragon',
 		category: 'Physical',
 	},
@@ -4050,6 +4052,7 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
 		bp: 90,
 		type: '???',
 		category: 'Physical',
+		makesContact: true,
 	},
 	'Strengthen Jutsu': {
 		bp: 0,
@@ -4063,7 +4066,7 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
 		isBullet: true,
 	},
 	'Bit Torrent': {
-		bp: 75,
+		bp: 100,
 		type: 'Normal',
 		category: 'Special',
 	},
@@ -4110,7 +4113,7 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
 		category: 'Special',
 	},
 	'Denial of Service': {
-		bp: 80,
+		bp: 90,
 		type: 'Electric',
 		category: 'Special',
 	},
@@ -4118,6 +4121,7 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
 		bp: 100,
 		type: 'Ghost',
 		category: 'Physical',
+		makesContact: true,
 	},
 	'Mysterious Song': {
 		bp: 0,
@@ -4132,7 +4136,7 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
 		makesContact: true,
 	},
 	'nope': {
-		bp: 80,
+		bp: 85,
 		type: 'Rock',
 		category: 'Physical',
 		isSound: true,
@@ -4183,8 +4187,9 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
 		bp: 75,
 		type: 'Ghost',
 		category: 'Physical',
+		makesContact: true,
 	},
-  'Death Sickle': {
+	'Death Sickle': {
 		bp: 110,
 		type: 'Ghost',
 		category: 'Physical',
@@ -4240,7 +4245,7 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
 		category: 'Special',
 	},
 	'Laser Beam': {
-		bp: 120,
+		bp: 110,
 		type: 'Electric',
 		category: 'Special',
 		isBeam: true,
@@ -4288,18 +4293,18 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
 		bp: 80,
 		type: 'Psychic',
 		category: 'Physical',
-		overrideOffensiveStat: 'spd',
 		makesContact: true,
+		overrideOffensiveStat: 'spd',
 	},
 	'Shield Bash': {
 		bp: 80,
 		type: 'Steel',
 		category: 'Physical',
-		overrideOffensiveStat: 'def',
 		makesContact: true,
+		overrideOffensiveStat: 'def',
 	},
 	'Tornado Tentacle': {
-		bp: 120,
+		bp: 100,
 		type: 'Dragon',
 		category: 'Physical',
 		makesContact: true,
@@ -4321,11 +4326,13 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
 		bp: 110,
 		type: 'Dragon',
 		category: 'Special',
+		isPulse: true,
 	},
 	'Death Egg': {
-		bp: 120,
+		bp: 100,
 		type: 'Steel',
 		category: 'Physical',
+		makesContact: true,
 	},
 	'Missile Punch': {
 		bp: 100,
@@ -4373,15 +4380,13 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
 		type: 'Fighting',
 		category: 'Physical',
 		priority: 3,
-		makesContact: true,
 		isSound: true,
 	},
 	'TAKE THAT!': {
-		bp: 80,
+		bp: 75,
 		type: 'Fighting',
 		category: 'Physical',
 		priority: -4,
-		makesContact: true,
 		isSound: true,
 	},
 	'Golden Bracket': {
@@ -4409,7 +4414,6 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
 		bp: 60,
 		type: '???',
 		category: 'Special',
-		makesContact: true,
 	},
 	'Cataclysm': {
 		bp: 120,

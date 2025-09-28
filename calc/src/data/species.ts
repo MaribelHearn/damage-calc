@@ -8862,7 +8862,7 @@ tentaquil: {
 	},
 	Giygas: {
 		types: ['Dark', 'Ghost'],
-		bs: {hp: 100, at: 80, df: 80, sa: 150, sd: 150, sp: 40},
+		bs: {hp: 100, at: 100, df: 100, sa: 150, sd: 150, sp: 80},
 		weightkg: 45,
 		abilities: {0: 'Incomprehensible'},
 	},
@@ -9285,19 +9285,19 @@ Yoda: {
 		weightkg: 90,
 		abilities: {0: 'Cardboard Box'},
 	},
-	Samus: {
+	'Zero Suit Samus': {
 		types: ['Electric'],
 		bs: {hp: 60, at: 100, df: 80, sa: 90, sd: 80, sp: 110},
 		weightkg: 45,
 		abilities: {0: 'Armor Damage'},
-		otherFormes: ['Samus-Armored'],
+		otherFormes: ['Samus'],
 	},
-	'Samus-Armored': {
+	Samus: {
 		types: ['Electric', 'Steel'],
 		bs: {hp: 60, at: 100, df: 120, sa: 120, sd: 80, sp: 40},
 		weightkg: 90,
 		abilities: {0: 'Armor Damage'},
-		baseSpecies: 'Samus',
+		baseSpecies: 'Zero Suit Samus',
 	},
 	'Zeeky H. Bomb': {
 		types: ['Normal'],
