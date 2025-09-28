@@ -8876,13 +8876,13 @@ tentaquil: {
 		types: ['Water'],
 		bs: {hp: 110, at: 145, df: 108, sa: 110, sd: 108, sp: 85},
 		weightkg: 45,
-		abilities: {0: 'Torrent'},
+		abilities: {0: 'Drizzle'},
 	},
 	Satan: {
 		types: ['Fire'],
 		bs: {hp: 118, at: 130, df: 135, sa: 125, sd: 88, sp: 70},
 		weightkg: 666,
-		abilities: {0: 'Moxie'},
+		abilities: {0: 'Drought'},
 	},
 	'Lily White': {
 		types: ['Fairy'],
@@ -9718,7 +9718,7 @@ Yoda: {
 		types: ['Grass', 'Flying'],
 		bs: {hp: 90, at: 75, df: 100, sa: 115, sd: 100, sp: 70},
 		weightkg: 90,
-		abilities: {0: 'Pressure'},
+		abilities: {0: 'Delta Stream'},
 	},
 	Ran: {
 		types: ['Ground', 'Psychic'],
