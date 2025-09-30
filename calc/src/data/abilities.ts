@@ -305,6 +305,7 @@ const SS = SM.concat([
   'Angsty',
   'Sharpshooter',
   'Feline Deity',
+  'Glitch City',
   'Cardboard Box',
   'Armor Damage',
   'Research',

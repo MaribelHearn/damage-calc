@@ -9230,7 +9230,7 @@ Yoda: {
 		types: ['???', 'Normal'],
 		bs: {hp: 97, at: 137, df: 43, sa: 79, sd: 67, sp: 89},
 		weightkg: 1590.8,
-		abilities: {0: 'Normalize'},
+		abilities: {0: 'Glitch City'},
 		otherFormes: ['Missingno.-Ghost', 'Missingno.-Kabutops', 'Missingno.-Aerodactyl', 'Missingno.-Yellow'],
 	},
 	'Missingno.-Ghost': {
