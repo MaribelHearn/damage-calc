@@ -9411,14 +9411,14 @@ Yoda: {
 		types: ['Bug', 'Steel'],
 		bs: {hp: 60, at: 120, df: 115, sa: 85, sd: 70, sp: 130},
 		weightkg: 45,
-		abilities: {0: 'Flash Fire'},
+		abilities: {0: 'Flame Body'},
 		otherFormes: ['Hibachi 2'],
 	},
 	'Hibachi 2': {
 		types: ['Bug', 'Steel'],
 		bs: {hp: 60, at: 85, df: 70, sa: 120, sd: 115, sp: 130},
 		weightkg: 45,
-		abilities: {0: 'Flash Fire'},
+		abilities: {0: 'Flame Body'},
 		baseSpecies: 'Hibachi',
 	},
 	'Evaccania DOOM': {
