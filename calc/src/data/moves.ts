@@ -4326,7 +4326,7 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
 		bp: 110,
 		type: 'Dragon',
 		category: 'Special',
-		isPulse: true,
+		ignoreDefensive: true,
 	},
 	'Death Egg': {
 		bp: 100,

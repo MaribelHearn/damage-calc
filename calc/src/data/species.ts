@@ -9070,19 +9070,19 @@ Yoda: {
 	},
 	Longcat: {
 		types: ['Normal'],
-		bs: {hp: 231, at: 114, df: 74, sa: 56, sd: 96, sp: 29},
+		bs: {hp: 231, at: 115, df: 75, sa: 55, sd: 95, sp: 29},
 		weightkg: 9001,
 		abilities: {0: 'Feline Deity'},
 	},
 	tacgnoL: {
 		types: ['Dark'],
-		bs: {hp: 231, at: 56, df: 96, sa: 114, sd: 74, sp: 29},
+		bs: {hp: 231, at: 55, df: 95, sa: 115, sd: 75, sp: 29},
 		weightkg: 9001,
 		abilities: {0: 'Feline Deity'},
 	},
 	oLngact: {
 		types: ['Fire'],
-		bs: {hp: 231, at: 74, df: 56, sa: 96, sd: 114, sp: 29},
+		bs: {hp: 231, at: 75, df: 55, sa: 95, sd: 115, sp: 29},
 		weightkg: 45,
 		abilities: {0: 'Feline Deity'},
 	},
