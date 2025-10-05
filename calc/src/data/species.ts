@@ -9083,7 +9083,7 @@ Yoda: {
 	oLngact: {
 		types: ['Fire'],
 		bs: {hp: 231, at: 75, df: 55, sa: 95, sd: 115, sp: 29},
-		weightkg: 45,
+		weightkg: 9001,
 		abilities: {0: 'Feline Deity'},
 	},
 	'Orly-Owl': {
@@ -9276,7 +9276,7 @@ Yoda: {
 	'King Dedede': {
 		types: ['Water', 'Ice'],
 		bs: {hp: 120, at: 125, df: 70, sa: 55, sd: 90, sp: 60},
-		weightkg: 90,
+		weightkg: 150,
 		abilities: {0: 'Thick Fat'},
 	},
 	Snake: {
