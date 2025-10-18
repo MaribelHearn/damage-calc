@@ -10,6 +10,9 @@ export const SEED_BOOSTED_STAT: {[item: string]: StatID} = {
 
 export function getItemBoostType(item: string | undefined) {
   switch (item) {
+  case 'Mystery Plate':
+  case 'Question Mark':
+    return '???';
   case 'Draco Plate':
   case 'Dragon Fang':
     return 'Dragon';

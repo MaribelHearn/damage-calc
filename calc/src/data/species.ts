@@ -2713,6 +2713,7 @@ const DPP_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     abilities: {0: 'Multitype'},
     gender: 'N',
     otherFormes: [
+      'Arceus-???',
       'Arceus-Bug',
       'Arceus-Dark',
       'Arceus-Dragon',
@@ -2730,6 +2731,14 @@ const DPP_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
       'Arceus-Steel',
       'Arceus-Water',
     ],
+  },
+  'Arceus-???': {
+    types: ['???'],
+    bs: {hp: 120, at: 120, df: 120, sa: 120, sd: 120, sp: 120},
+    weightkg: 320,
+    abilities: {0: 'Multitype'},
+    gender: 'N',
+    baseSpecies: 'Arceus',
   },
   'Arceus-Bug': {
     types: ['Bug'],

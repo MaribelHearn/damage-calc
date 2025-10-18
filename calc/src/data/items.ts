@@ -473,6 +473,8 @@ const SS = SM.concat([
   'Unknown Gem',
   'Glitchy Seed',
   'Unknownium Z',
+  'Mystery Plate',
+  'Question Mark',
   'Cirnium Z',
   'Utsuhonium Z',
   'Yuyukium Z',
