@@ -8924,7 +8924,7 @@ tentaquil: {
 	},
 	Reimu: {
 		types: ['Normal', 'Psychic'],
-		bs: {hp: 90, at: 100, df: 95, sa: 85, sd: 100, sp: 70},
+		bs: {hp: 90, at: 85, df: 95, sa: 100, sd: 100, sp: 70},
 		weightkg: 45,
 		abilities: {0: 'Serene Grace'},
 	},
@@ -8942,9 +8942,9 @@ tentaquil: {
 	},
 	'King Harkinian': {
 		types: ['Fairy'],
-		bs: {hp: 160, at: 90, df: 100, sa: 30, sd: 100, sp: 30},
+		bs: {hp: 160, at: 110, df: 75, sa: 75, sd: 75, sp: 30},
 		weightkg: 90,
-		abilities: {0: 'Magic Guard'},
+		abilities: {0: 'Pixilate'},
 	},
 	Yarrow: {
 		types: ['Rock'],
@@ -9613,7 +9613,7 @@ Yoda: {
 	},
 	Nue: {
 		types: ['Dark', 'Flying'],
-		bs: {hp: 90, at: 75, df: 80, sa: 95, sd: 80, sp: 115},
+		bs: {hp: 70, at: 95, df: 75, sa: 105, sd: 75, sp: 115},
 		weightkg: 45,
 		abilities: {0: 'Unburden'},
 	},
@@ -9655,7 +9655,7 @@ Yoda: {
 	},
 	Boo: {
 		types: ['Ghost'],
-		bs: {hp: 50, at: 25, df: 25, sa: 25, sd: 25, sp: 60},
+		bs: {hp: 50, at: 30, df: 30, sa: 30, sd: 30, sp: 80},
 		weightkg: 0.1,
 		abilities: {0: 'Get Together'},
 		otherFormes: ['Boolossus'],
