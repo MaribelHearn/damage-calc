@@ -9100,7 +9100,7 @@ Yoda: {
 	},
 	'Orly-Owl': {
 		types: ['Normal', 'Flying'],
-		bs: {hp: 70, at: 90, df: 70, sa: 90, sd: 70, sp: 90},
+		bs: {hp: 70, at: 50, df: 85, sa: 75, sd: 105, sp: 105},
 		weightkg: 45,
 		abilities: {0: 'Unaware'},
 	},
@@ -9827,7 +9827,7 @@ Yoda: {
 	},
 	Hina: {
 		types: ['Poison'],
-		bs: {hp: 85, at: 80, df: 70, sa: 80, sd: 80, sp: 95},
+		bs: {hp: 85, at: 80, df: 70, sa: 95, sd: 80, sp: 95},
 		weightkg: 45,
 		abilities: {0: 'Liquid Ooze'},
 	},
