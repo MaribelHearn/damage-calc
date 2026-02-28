@@ -8982,7 +8982,7 @@ tentaquil: {
 		types: ['Dark', 'Fighting'],
 		bs: {hp: 95, at: 125, df: 90, sa: 75, sd: 90, sp: 125},
 		weightkg: 90,
-		abilities: {0: 'No Guard'},
+		abilities: {0: 'Trace'},
 	},
 	'Crasher Wake': {
 		types: ['Water'],
@@ -9385,9 +9385,9 @@ Yoda: {
 	},
 	Veteran: {
 		types: ['Steel', 'Poison'],
-		bs: {hp: 80, at: 130, df: 134, sa: 70, sd: 70, sp: 116},
+		bs: {hp: 80, at: 120, df: 134, sa: 75, sd: 75, sp: 116},
 		weightkg: 45,
-		abilities: {0: 'Guts'},
+		abilities: {0: 'Overcoat'},
 	},
 	Yukari: {
 		types: ['Psychic'],
@@ -9671,7 +9671,7 @@ Yoda: {
 		types: ['Ghost'],
 		bs: {hp: 130, at: 90, df: 50, sa: 108, sd: 92, sp: 70},
 		weightkg: 0.1,
-		abilities: {0: 'Levitate'},
+		abilities: {0: 'Wandering Spirit'},
 	},
 	Bouldergeist: {
 		types: ['Ghost', 'Rock'],
@@ -9769,13 +9769,13 @@ Yoda: {
 		types: ['Grass', 'Fire'],
 		bs: {hp: 62, at: 77, df: 54, sa: 83, sd: 55, sp: 68},
 		weightkg: 45,
-		abilities: {0: 'Blaze'},
+		abilities: {0: 'Chloroblaze'},
 	},
 	Venudrio: {
 		types: ['Normal', 'Poison'],
 		bs: {hp: 70, at: 96, df: 77, sa: 80, sd: 80, sp: 95},
 		weightkg: 90,
-		abilities: {0: 'Overgrow'},
+		abilities: {0: 'Tangled Growth'},
 	},
 	'Bloody Jitterbug': {
 		types: ['Bug', 'Dark'],
