@@ -8768,7 +8768,7 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     baseSpecies: 'Zigzagoon',
   },
   // Fundex
-tentaquil: {
+  tentaquil: {
 		types: ['Bug', 'Psychic'],
 		bs: {hp: 100, at: 100, df: 100, sa: 100, sd: 100, sp: 100},
 		weightkg: 90,
@@ -8848,7 +8848,7 @@ tentaquil: {
 		weightkg: 45,
 		abilities: {0: 'Magician'},
 	},
-  'Baby Luigi': {
+	'Baby Luigi': {
 		types: ['Grass'],
 		bs: {hp: 80, at: 65, df: 60, sa: 40, sd: 60, sp: 65},
 		weightkg: 5,
@@ -8886,13 +8886,13 @@ tentaquil: {
 	},
 	'Soviet Mudkip': {
 		types: ['Water'],
-		bs: {hp: 110, at: 145, df: 108, sa: 110, sd: 108, sp: 85},
+		bs: {hp: 106, at: 140, df: 90, sa: 115, sd: 125, sp: 90},
 		weightkg: 45,
 		abilities: {0: 'Drizzle'},
 	},
 	Satan: {
 		types: ['Fire'],
-		bs: {hp: 118, at: 130, df: 135, sa: 125, sd: 88, sp: 70},
+		bs: {hp: 106, at: 140, df: 115, sa: 125, sd: 90, sp: 90},
 		weightkg: 666,
 		abilities: {0: 'Drought'},
 	},
@@ -8924,11 +8924,11 @@ tentaquil: {
 	},
 	Reimu: {
 		types: ['Normal', 'Psychic'],
-		bs: {hp: 90, at: 85, df: 95, sa: 100, sd: 100, sp: 70},
+		bs: {hp: 90, at: 80, df: 95, sa: 105, sd: 110, sp: 60},
 		weightkg: 45,
 		abilities: {0: 'Serene Grace'},
 	},
-	'Dr. Robotnik': {
+	'Dr. Eggman': {
 		types: ['Normal', 'Steel'],
 		bs: {hp: 130, at: 90, df: 90, sa: 50, sd: 100, sp: 50},
 		weightkg: 90,
@@ -8942,7 +8942,7 @@ tentaquil: {
 	},
 	'King Harkinian': {
 		types: ['Fairy'],
-		bs: {hp: 160, at: 110, df: 75, sa: 75, sd: 75, sp: 30},
+		bs: {hp: 155, at: 110, df: 50, sa: 95, sd: 75, sp: 40},
 		weightkg: 90,
 		abilities: {0: 'Pixilate'},
 	},
@@ -9011,36 +9011,36 @@ tentaquil: {
 		abilities: {0: 'Gluttony'},
 	},
 	'Young Link': {
-		types: ['Fairy'],
+		types: ['Fighting'],
 		bs: {hp: 60, at: 80, df: 70, sa: 45, sd: 40, sp: 90},
 		weightkg: 45,
 		abilities: {0: 'Justified'},
 	},
 	Link: {
-		types: ['Fairy', 'Steel'],
+		types: ['Fighting', 'Steel'],
 		bs: {hp: 80, at: 115, df: 125, sa: 70, sd: 70, sp: 70},
 		weightkg: 90,
 		abilities: {0: 'Justified'},
 	},
 	'Young Zelda': {
-		types: ['Fairy'],
+		types: ['Psychic', 'Fairy'],
 		bs: {hp: 50, at: 65, df: 40, sa: 75, sd: 75, sp: 80},
 		weightkg: 45,
 		abilities: {0: 'Synchronize'},
 	},
 	Zelda: {
-		types: ['Fairy', 'Psychic'],
+		types: ['Psychic', 'Fairy'],
 		bs: {hp: 70, at: 95, df: 60, sa: 115, sd: 115, sp: 75},
 		weightkg: 45,
 		abilities: {0: 'Synchronize'},
 		otherFormes: ['Sheik'],
 	},
 	Sheik: {
-		types: ['Poison', 'Psychic'],
+		types: ['Psychic', 'Poison'],
 		bs: {hp: 70, at: 115, df: 85, sa: 50, sd: 105, sp: 105},
 		weightkg: 45,
 		abilities: {0: 'Quick Feet'},
-		baseSpecies: 'Zelda',
+		baseSpecies: 'Sheik',
 	},
 	Ganondorf: {
 		types: ['Dark', 'Fighting'],
@@ -9068,7 +9068,7 @@ tentaquil: {
 		weightkg: 90,
 		abilities: {0: 'Anticipation'},
 	},
-Yoda: {
+	Yoda: {
 		types: ['Psychic'],
 		bs: {hp: 85, at: 81, df: 94, sa: 130, sd: 115, sp: 30},
 		weightkg: 45,
@@ -9160,9 +9160,9 @@ Yoda: {
 	},
 	'Super Nerd': {
 		types: ['Steel', 'Ghost'],
-		bs: {hp: 50, at: 70, df: 170, sa: 70, sd: 170, sp: 70},
+		bs: {hp: 60, at: 80, df: 120, sa: 90, sd: 120, sp: 55},
 		weightkg: 45,
-		abilities: {0: 'Battle Armor'},
+		abilities: {0: 'Analytic'},
 	},
 	Wriggle: {
 		types: ['Bug'],
@@ -9367,7 +9367,7 @@ Yoda: {
 	},
 	'Dark Matter': {
 		types: ['Dark', 'Poison'],
-		bs: {hp: 90, at: 45, df: 75, sa: 95, sd: 75, sp: 40},
+		bs: {hp: 90, at: 40, df: 70, sa: 95, sd: 70, sp: 40},
 		weightkg: 15,
 		abilities: {0: 'Levitate'},
 	},
@@ -9550,21 +9550,21 @@ Yoda: {
 	},
 	Shingyoku: {
 		types: ['???'],
-		bs: {hp: 110, at: 115, df: 115, sa: 115, sd: 115, sp: 110},
+		bs: {hp: 100, at: 135, df: 95, sa: 135, sd: 95, sp: 120},
 		weightkg: 45,
 		abilities: {0: 'Pressure'},
-		otherFormes: ['Shingyoku-Priestess', 'Shingyoku-Orb'],
+		otherFormes: ['Shingyoku-Priestess', 'Shingyoku-Priest'],
 	},
 	'Shingyoku-Priestess': {
 		types: ['???'],
-		bs: {hp: 100, at: 135, df: 95, sa: 135, sd: 95, sp: 120},
+		bs: {hp: 120, at: 95, df: 135, sa: 95, sd: 135, sp: 100},
 		weightkg: 45,
 		abilities: {0: 'Pressure'},
 		baseSpecies: 'Shingyoku',
 	},
-	'Shingyoku-Orb': {
+	'Shingyoku-Priest': {
 		types: ['???'],
-		bs: {hp: 120, at: 95, df: 135, sa: 95, sd: 135, sp: 100},
+		bs: {hp: 110, at: 115, df: 115, sa: 115, sd: 115, sp: 110},
 		weightkg: 45,
 		abilities: {0: 'Pressure'},
 		baseSpecies: 'Shingyoku',
@@ -9629,7 +9629,7 @@ Yoda: {
 		weightkg: 15,
 		abilities: {0: 'Soundproof'},
 	},
-  'Baby Mario': {
+	'Baby Mario': {
 		types: ['Fire'],
 		bs: {hp: 55, at: 75, df: 60, sa: 55, sd: 50, sp: 75},
 		weightkg: 5,
@@ -9755,7 +9755,7 @@ Yoda: {
 	},
 	Ruscus: {
 		types: ['Rock', 'Dragon'],
-		bs: {hp: 90, at: 100, df: 80, sa: 100, sd: 50, sp: 30},
+		bs: {hp: 85, at: 85, df: 75, sa: 85, sd: 45, sp: 30},
 		weightkg: 90,
 		abilities: {0: 'Pressure'},
 	},
@@ -9791,31 +9791,31 @@ Yoda: {
 	},
 	'Internet Explorer': {
 		types: ['Ice', 'Electric'],
-		bs: {hp: 40, at: 65, df: 65, sa: 65, sd: 65, sp: 10},
+		bs: {hp: 65, at: 65, df: 65, sa: 65, sd: 65, sp: 10},
 		weightkg: 0.1,
 		abilities: {0: 'Web Browser'},
 	},
 	'Inori Aizawa': {
 		types: ['Ice'],
-		bs: {hp: 70, at: 105, df: 65, sa: 65, sd: 105, sp: 105},
+		bs: {hp: 70, at: 110, df: 75, sa: 60, sd: 105, sp: 105},
 		weightkg: 45,
 		abilities: {0: 'Web Browser'},
 	},
 	'Microsoft Edge': {
 		types: ['Ice', 'Electric'],
-		bs: {hp: 70, at: 65, df: 105, sa: 65, sd: 105, sp: 105},
+		bs: {hp: 70, at: 60, df: 110, sa: 75, sd: 105, sp: 105},
 		weightkg: 0.1,
 		abilities: {0: 'Web Browser'},
 	},
 	'Mozilla Firefox': {
 		types: ['Fire', 'Electric'],
-		bs: {hp: 70, at: 105, df: 60, sa: 65, sd: 110, sp: 105},
+		bs: {hp: 70, at: 105, df: 60, sa: 75, sd: 110, sp: 105},
 		weightkg: 0.1,
 		abilities: {0: 'Web Browser'},
 	},
 	'Google Chrome': {
 		types: ['Steel', 'Electric'],
-		bs: {hp: 70, at: 65, df: 110, sa: 105, sd: 60, sp: 105},
+		bs: {hp: 70, at: 75, df: 110, sa: 105, sd: 60, sp: 105},
 		weightkg: 0.1,
 		abilities: {0: 'Web Browser'},
 	},
