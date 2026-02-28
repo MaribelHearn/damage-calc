@@ -176,7 +176,7 @@ export function calculateSMSSSV(
     'Thermal Exchange', 'Thick Fat', 'Unaware', 'Vital Spirit',
     'Volt Absorb', 'Water Absorb', 'Water Bubble', 'Water Veil',
     'Well-Baked Body', 'White Smoke', 'Wind Rider', 'Wonder Guard',
-    'Wonder Skin'
+    'Wonder Skin', 'Reflowering',
   );
 
   const attackerIgnoresAbility = attacker.hasAbility('Mold Breaker', 'Teravolt', 'Turboblaze');
@@ -1406,7 +1406,7 @@ export function calculateAtModsSMSSSV(
     (attacker.hasAbility('Guts') && attacker.status && move.category === 'Physical') ||
     (attacker.curHP() <= attacker.maxHP() / 3 &&
       ((attacker.hasAbility('Overgrow') && move.hasType('Grass')) ||
-       (attacker.hasAbility('Blaze') && move.hasType('Fire')) ||
+       ((attacker.hasAbility('Blaze') || attacker.hasAbility('Chloroblaze')) && move.hasType('Fire')) ||
        (attacker.hasAbility('Torrent') && move.hasType('Water')) ||
        (attacker.hasAbility('Swarm') && move.hasType('Bug')))) ||
     (move.category === 'Special' && attacker.abilityOn && attacker.hasAbility('Plus', 'Minus'))
@@ -1440,6 +1440,7 @@ export function calculateAtModsSMSSSV(
   if (
     field.attackerSide.isFlowerGift &&
     !attacker.hasAbility('Flower Gift') &&
+    !attacker.hasAbility('Reflowering') &&
     field.hasWeather('Sun', 'Harsh Sunshine') &&
     move.category === 'Physical') {
     atMods.push(6144);
@@ -1594,8 +1595,8 @@ export function calculateDfModsSMSSSV(
     dfMods.push(6144);
     desc.defenderAbility = defender.ability;
   } else if (
-    defender.named('Cherrim') &&
-    defender.hasAbility('Flower Gift') &&
+    (defender.named('Cherrim') || defender.named('Yuyuko')) &&
+    (defender.hasAbility('Flower Gift') || defender.hasAbility('Reflowering')) &&
     field.hasWeather('Sun', 'Harsh Sunshine') &&
     !hitsPhysical
   ) {

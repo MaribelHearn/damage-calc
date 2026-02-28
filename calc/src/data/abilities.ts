@@ -305,7 +305,6 @@ const SS = SM.concat([
   'Angsty',
   'Sharpshooter',
   'Feline Deity',
-  'Glitch City',
   'Cardboard Box',
   'Armor Damage',
   'Research',
@@ -318,6 +317,12 @@ const SS = SM.concat([
   'Short-Tempered',
   'Web Browser',
   'Taxidermy',
+  'Glitch City',
+  'Reflowering',
+  'Chloroblaze',
+  'Solar Glutton',
+  'Tangled Growth',
+  'Chlorobird',
 ]);
 
 const SV = SS.concat([
