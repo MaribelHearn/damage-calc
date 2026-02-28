@@ -3880,7 +3880,7 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
 		isSound: true,
 	},
 	'Thunder Drum Shot': {
-		bp: 80,
+		bp: 60,
 		type: 'Electric',
 		category: 'Special',
 		isSound: true,
@@ -3892,9 +3892,9 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
 		isBullet: true,
 	},
 	'Final Danmaku': {
-		bp: 110,
+		bp: 120,
 		type: 'Flying',
-		category: 'Special',
+		category: 'Physical',
 		isBullet: true,
 	},
 	'ZZZAP!': {
