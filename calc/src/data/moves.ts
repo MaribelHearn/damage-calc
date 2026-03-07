@@ -4130,7 +4130,7 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
 		isSound: true,
 	},
 	'Peerless Wind God': {
-		bp: 80,
+		bp: 0,
 		type: 'Flying',
 		category: 'Physical',
 		makesContact: true,

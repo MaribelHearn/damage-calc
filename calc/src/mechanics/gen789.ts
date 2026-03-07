@@ -824,9 +824,11 @@ export function calculateBasePowerSMSSSV(
     desc.moveBP = basePower;
     break;
   case 'Electro Ball':
+  case 'Peerless Wind God':
     const r = Math.floor(attacker.stats.spe / defender.stats.spe);
     basePower = r >= 4 ? 150 : r >= 3 ? 120 : r >= 2 ? 80 : r >= 1 ? 60 : 40;
     if (defender.stats.spe === 0) basePower = 40;
+    if (move.name === 'Peerless Wind God') basePower = Math.max(basePower, 60);
     desc.moveBP = basePower;
     break;
   case 'Gyro Ball':
