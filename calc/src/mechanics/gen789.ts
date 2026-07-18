@@ -594,11 +594,17 @@ export function calculateSMSSSV(
   // #endregion
   // #region (Special) Attack
   const attack = calculateAttackSMSSSV(gen, attacker, defender, move, field, desc, isCritical);
-  let attackStat = move.category === 'Special' ? 'spa' : 'atk';
-  attackStat = move.named('Shell Side Arm') && getShellSideArmCategory(attacker, defender) === 'Physical' ? 'atk' : attackStat;
-  attackStat = move.named('Shell Side Arm') && getShellSideArmCategory(attacker, defender) === 'Special' ? 'spa' : attackStat;
-  attackStat = move.named('Body Press') || move.named('Shield Bash') ? 'def' : attackStat;
-  attackStat = move.named('Barrier Crash') ? 'spd' : attackStat;
+  const attackStat =
+    move.named('Shell Side Arm') &&
+    getShellSideArmCategory(attacker, defender) === 'Physical'
+      ? 'atk'
+      : move.named('Body Press') || move.named('Shield Bash')
+        ? 'def'
+        : move.named('Barrier Crash')
+          ? 'spd'
+          : move.category === 'Special'
+            ? 'spa'
+            : 'atk';
   // #endregion
 
   // #region (Special) Defense
@@ -1328,11 +1334,13 @@ export function calculateAttackSMSSSV(
     move.named('Shell Side Arm') &&
     getShellSideArmCategory(attacker, defender) === 'Physical'
       ? 'atk'
-      : move.named('Body Press')
+      : move.named('Body Press') || move.named('Shield Bash')
         ? 'def'
-        : move.category === 'Special'
-          ? 'spa'
-          : 'atk';
+        : move.named('Barrier Crash')
+          ? 'spd'
+          : move.category === 'Special'
+            ? 'spa'
+            : 'atk';
   desc.attackEVs =
     move.named('Foul Play')
       ? getStatDescriptionText(gen, defender, attackStat, defender.nature)
