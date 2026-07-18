@@ -118,7 +118,7 @@ export function calculateSMSSSV(
   }
   if (defender.teraType !== 'Stellar') desc.defenderTera = defender.teraType;
 
-  if (move.named('Photon Geyser', 'Light That Burns the Sky') ||
+  if (move.named('Photon Geyser', 'Light That Burns the Sky', 'Light Arrow', 'Glitzer Popping') ||
       (move.named('Tera Blast') && attacker.teraType) ||
       (move.named('Tera Starstorm') && attacker.teraType && attacker.named('Terapagos-Stellar'))) {
     move.category = attacker.stats.atk > attacker.stats.spa ? 'Physical' : 'Special';
@@ -594,17 +594,11 @@ export function calculateSMSSSV(
   // #endregion
   // #region (Special) Attack
   const attack = calculateAttackSMSSSV(gen, attacker, defender, move, field, desc, isCritical);
-  const attackStat =
-    move.named('Shell Side Arm') &&
-    getShellSideArmCategory(attacker, defender) === 'Physical'
-      ? 'atk'
-      : move.named('Body Press') || move.named('Shield Bash')
-        ? 'def'
-        : move.named('Barrier Crash')
-          ? 'spd'
-          : move.category === 'Special'
-            ? 'spa'
-            : 'atk';
+  let attackStat = move.category === 'Special' ? 'spa' : 'atk';
+  attackStat = move.named('Shell Side Arm') && getShellSideArmCategory(attacker, defender) === 'Physical' ? 'atk' : attackStat;
+  attackStat = move.named('Shell Side Arm') && getShellSideArmCategory(attacker, defender) === 'Special' ? 'spa' : attackStat;
+  attackStat = move.named('Body Press') || move.named('Shield Bash') ? 'def' : attackStat;
+  attackStat = move.named('Barrier Crash') ? 'spd' : attackStat;
   // #endregion
 
   // #region (Special) Defense

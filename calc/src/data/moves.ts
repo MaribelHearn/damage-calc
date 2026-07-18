@@ -4420,6 +4420,21 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
 		type: '???',
 		category: 'Special',
 	},
+	'Dark Catnarok': {
+		bp: 250,
+		type: 'Dark',
+		category: 'Special',
+	},
+	'Fiery Catnarok': {
+		bp: 250,
+		type: 'Fire',
+		category: 'Special',
+	},
+	'Glitzer Popping': {
+		bp: 100,
+		type: '???',
+		category: 'Physical',
+	},
   'Unreal Unraveling': {
     bp: 1,
     type: '???',
