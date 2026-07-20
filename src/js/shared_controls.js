@@ -1414,6 +1414,8 @@ $(".gen").change(function () {
 	/*eslint-disable */
 	//gen = ~~$(this).val() || 8;
 	// Fundex: temp override gen to always be 8
+	console.log(~~$(this));
+	console.log(~~$(this).val());
 	gen = 8;
 	GENERATION = calc.Generations.get(gen);
 	var params = new URLSearchParams(window.location.search);
@@ -1435,7 +1437,7 @@ $(".gen").change(function () {
 	genWasChanged = true;
 	/* eslint-enable */
 	// declaring these variables with var here makes z moves not work; TODO
-	pokedex = calc.SPECIES[gen];
+	pokedex = calc.SPECIES[10];
 	setdex = SETDEX[gen];
 	randdex = RANDDEX[gen];
 	if ('Aegislash' in randdex) randdex['Aegislash-Shield'] = randdex['Aegislash'];

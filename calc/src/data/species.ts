@@ -8767,6 +8767,9 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     nfe: true,
     baseSpecies: 'Zigzagoon',
   },
+};
+
+const FUNDEX_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
   // Fundex
   tentaquil: {
 		types: ['Bug', 'Psychic'],
@@ -9938,6 +9941,8 @@ const SS_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
 };
 
 const SS: {[name: string]: SpeciesData} = extend(true, {}, SM, SS_PATCH);
+
+const FUNDEX: {[name: string]: SpeciesData} = extend(true, {}, SM, SS_PATCH, FUNDEX_PATCH);
 
 delete SS['Pikachu-Starter'];
 delete SS['Eevee-Starter'];
@@ -11244,7 +11249,7 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
 
 const SV: {[name: string]: SpeciesData} = extend(true, {}, SS, SV_PATCH, PLA_PATCH);
 
-export const SPECIES = [{}, RBY, GSC, ADV, DPP, BW, XY, SM, SS, SV];
+export const SPECIES = [{}, RBY, GSC, ADV, DPP, BW, XY, SM, SS, SV, FUNDEX];
 
 export class Species implements I.Species {
   private readonly gen: I.GenerationNum;
