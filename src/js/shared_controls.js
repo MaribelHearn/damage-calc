@@ -1437,9 +1437,9 @@ $(".gen").change(function () {
 	// declaring these variables with var here makes z moves not work; TODO
 	// Fundex: get only Fundex species if Fundex selected; all if International (8.5)
 	var speciesGen = gen;
-	if ($(this).val() === 8.5) {
+	if ($(this).val() == 8.5) {
 		speciesGen = 8;
-	} else if ($(this).val() === 8) {
+	} else if ($(this).val() == 8) {
 		speciesGen = 10; // Fundex is in the 10th slot
 	}
 	pokedex = calc.SPECIES[speciesGen];
@@ -1476,7 +1476,7 @@ function getFirstValidSetOption() {
 	// NB: The first set is never valid, so we start searching after it.
 	// Fundex: make tentaquil the default
 	for (var i = 1; i < sets.length; i++) {
-		if (sets[i].id.startsWith("tentaquil") || sets[i].id) return sets[i];
+		if (sets[i].id && sets[i].id.startsWith('tentaquil')) return sets[i];
 	}
 	return undefined;
 }
