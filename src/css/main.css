@@ -412,7 +412,8 @@ th {
     position: relative;
     margin: -1px -3px 0;
     display: inline-block;
-    width: 5em;
+    min-width: 5em;
+    width: auto;
     border-radius: 8px;
 }
 .btn-wide {

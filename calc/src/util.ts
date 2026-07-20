@@ -9,7 +9,7 @@ export function error(err: boolean, msg: string) {
   if (err) {
     throw new Error(msg);
   } else {
-    console.log(msg);
+    //console.log(msg);
   }
 }
 

@@ -9940,7 +9940,7 @@ const FUNDEX_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
 	},
 };
 
-const SS: {[name: string]: SpeciesData} = extend(true, {}, SM, SS_PATCH);
+const SS: {[name: string]: SpeciesData} = extend(true, {}, SM, SS_PATCH, FUNDEX_PATCH);
 
 const FUNDEX: {[name: string]: SpeciesData} = extend(true, {}, FUNDEX_PATCH);
 
